@@ -1,0 +1,22 @@
+.navBar {
+  display: flex;
+  height: 120px;
+  background-color: #4056A1;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Bungee", sans-serif;
+  margin: 1.5em;
+}
+
+.navText {
+  display:flex;
+  margin: 1.5em;
+}
+
+.navBold {
+ font-weight: bold;
+}

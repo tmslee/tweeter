@@ -1,0 +1,23 @@
+header {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cfb222;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.headerName {
+  display: flex;
+}
+
+.firstName{
+  font-weight: bold;
+}
+
+.lastName{
+  font-weight: 300;
+}
+
