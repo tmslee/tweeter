@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -35,7 +36,7 @@
       </div>
     </nav>
 
-    <header>
+    <header class="tweeter-header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -50,10 +51,16 @@
     <main class="container">
 
       <section class="new-tweet">
+        <div class="err-msg">
+          <img class=err-symbol src="images/errSymbol.png">
+          <div class="err-text">this is a placeholder error</div>
+          <img class=err-symbol src="images/errSymbol.png">
+        </div>
+
         <form class="new-tweet-form" action="/tweets" method="POST">
           <label id="tweet-label" for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          <hr>
+          <textarea rows="1" class="autoExpand" data-min-rows="1" name="text" id="tweet-text"></textarea>
+          <hr class="new-tweet-line">
           <div class="new-tweet-footer">
             <button id="submit-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
@@ -61,11 +68,7 @@
         </form>
       </section>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      </p>
-      <p>
-        Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR! Hodor hodor... Hodor hodor hodor...
-      </p>
+      <section id="tweet-container"></section>
     </main>
   </body>
 </html>

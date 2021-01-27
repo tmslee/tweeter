@@ -1,5 +1,5 @@
-header {
-  height: 400px;
+.tweeter-header {
+  height: 520px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,6 +7,7 @@ header {
   align-items: center;
   background-color: #cfb222;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding-top:120px;
 }
 
 .headerName {

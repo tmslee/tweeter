@@ -1,6 +1,37 @@
 .new-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+  margin: 20px 0;
 }
+
+/*============error message================*/
+.err-msg {
+  display:none;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+
+  height: 30px;
+  padding: 3px;
+  border: 3px solid red;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.err-symbol {
+  height:75%;
+  margin: 0 5px;
+}
+
+.err-text {
+  font-size: 75%;
+}
+
+/*============error message================*/
+
 
 .new-tweet-form {
   display: flex;
@@ -8,26 +39,30 @@
 }
 
 #tweet-label {
+  align-self: flex-start;
   font-weight: bold;
   margin: 10px 0 0 5px;
 }
 
 #tweet-text {
+  overflow: hidden;
   margin: 2.5px 0 0 0;
-  height: 1.5em;
-  border: none;
+  width : 100%;
   background-color: #f4f1ec;
   outline: none;
   resize: none;
+  border: none
 }
 
-hr{
+.new-tweet-line{
+  align-self: center;
   border:2px solid #545149;
   width:100%;
   margin: 0 0 10px 0;
 }
 
 .new-tweet-footer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
