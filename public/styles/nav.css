@@ -13,11 +13,17 @@
 .logo {
   font-family: "Bungee", sans-serif;
   margin: 1.5em;
+  font-size: 150%;
 }
 
 .navText {
   display:flex;
   margin: 1.5em;
+  color: #bebebe;
+}
+
+.navText:hover {
+  color: #ffffff;
 }
 
 .navBold {

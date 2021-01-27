@@ -121,7 +121,19 @@ $(document).ready(function(){
     } else {
       newTweet.css('display', 'flex');
     }
-    
+  });
+
+  $(document).on('mouseover mouseout', '.tweet-option', function() {
+    let origSrc = $(this).attr('src');
+    let imageSrc = origSrc.substring(6, origSrc.length - 4);
+    let newSrc;
+    if (imageSrc.includes('Hover')) {
+      newSrc = imageSrc.substring(0, imageSrc.length - 5) + '.png';
+    } else {
+      newSrc = imageSrc + 'Hover.png';
+    }
+
+    this.setAttribute('src', 'images/' + newSrc);
   });
 
 });
