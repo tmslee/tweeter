@@ -87,11 +87,11 @@ $(document).ready(function(){
   $('.new-tweet-form').on('submit', function() {
     event.preventDefault();
     const formData = $(this).serialize();
-    const $errMsg = $(document).find('.err-msg');
+    const errMsg = $(document).find('.err-msg');
 
     const remCount = Number($(this).find('.counter').val());
     if (remCount < 140 && remCount >= 0) {
-      $errMsg.css('display', 'none');
+      errMsg.css('display', 'none');
 
       const url = '/tweets';
       $.ajax({
@@ -106,13 +106,22 @@ $(document).ready(function(){
       $(this).find('#tweet-text').val('');
       $(this).find('.counter').val(140);
     } else if (remCount === 140) {
-      $errMsg.find('.err-text').text(`you can't tweet nothing, try typing something before tweeting`);
-      $errMsg.css('display', 'flex');
+      errMsg.find('.err-text').text(`you can't tweet nothing, try typing something before tweeting`);
+      errMsg.css('display', 'flex');
     } else {
-      $errMsg.find('.err-text').text(`too long! please stay under the character limit`);
-      $errMsg.css('display', 'flex');
+      errMsg.find('.err-text').text(`too long! please stay under the character limit`);
+      errMsg.css('display', 'flex');
     }
   });
 
+  $(".navText").on('click', function() {
+    const newTweet = $('.new-tweet');
+    if (newTweet.css('display') === 'flex') {
+      newTweet.css('display', 'none');
+    } else {
+      newTweet.css('display', 'flex');
+    }
+    
+  });
 
 });
