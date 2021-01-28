@@ -7,7 +7,6 @@
   justify-content: space-between;
   align-items: center;
   position:fixed;
-  width: 100%;
   top:0;
 }
 
@@ -20,7 +19,7 @@
 .navText {
   display:flex;
   font-size: 3vh;
-  margin: 2vh;
+  margin: 3.5vh;
   color: #bdccff;
 }
 
@@ -30,4 +29,9 @@
 
 .navBold {
  font-weight: bold;
+}
+
+@media only screen and (min-width:960px) {
+
+
 }

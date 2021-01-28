@@ -6,6 +6,7 @@
 $(document).ready(function(){
   loadtweets();
 
+  /// submitting new tweet ////////////////////////////////////////////////////////////
   $('.new-tweet-form').on('submit', function() {
     event.preventDefault();
     const formData = $(this).serialize();
@@ -23,12 +24,13 @@ $(document).ready(function(){
         data: formData
       })
       .done(res => {})
-      .fail(err => console.log(err))
+      .fail(err => console.log(err));
 
       tweetContainer.empty();
       loadtweets();
       $(this).find('#tweet-text').val('');
       $(this).find('.counter').val(140);
+
     } else if (remCount === 140) {
       errMsg.find('.err-text').text(`you can't tweet nothing, try typing something before tweeting`);
       errMsg.css('display', 'flex');
@@ -47,6 +49,7 @@ $(document).ready(function(){
     }
   });
 
+  ///// tweet option buttons (like, flag, retweet) /////////////////////////////////////////
   $(document).on('click', '.tweet-option', function() {
     let origSrc = $(this).attr('src');
     let imageSrc = origSrc.substring(6, origSrc.length - 4);
@@ -60,6 +63,7 @@ $(document).ready(function(){
     this.setAttribute('src', 'images/' + newSrc);
   });
 
+  ////// scroll up button////////////////////////////////////////////////////////////////////
   $(document).on('click', '.scrollUp', function() {
     const scrollUp = $('.scrollUp');
     $(window).scrollTop(0);

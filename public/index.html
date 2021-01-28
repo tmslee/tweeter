@@ -49,29 +49,31 @@
           <h2 class="lastName">Name</h2>
       </div>
     </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-
-      <section class="new-tweet">
-        <div class="err-msg">
-          <img class=err-symbol src="images/errSymbol.png">
-          <div class="err-text">this is a placeholder error</div>
-          <img class=err-symbol src="images/errSymbol.png">
-        </div>
-
-        <form class="new-tweet-form" action="/tweets" method="POST">
-          <label id="tweet-label" for="tweet-text">What are you humming about?</label>
-          <textarea rows="1" class="autoExpand" data-min-rows="1" name="text" id="tweet-text"></textarea>
-          <hr class="new-tweet-line">
-          <div class="new-tweet-footer">
-            <button id="submit-button" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+  
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+  
+        <section class="new-tweet">
+          <div class="err-msg">
+            <img class=err-symbol src="images/errSymbol.png">
+            <div class="err-text">this is a placeholder error</div>
+            <img class=err-symbol src="images/errSymbol.png">
           </div>
-        </form>
-      </section>
-
-      <section id="tweet-container"></section>
+  
+          <form class="new-tweet-form" action="/tweets" method="POST">
+            <label id="tweet-label" for="tweet-text">What are you humming about?</label>
+            <textarea rows="1" class="autoExpand" data-min-rows="1" name="text" id="tweet-text"></textarea>
+            <hr class="new-tweet-line">
+            <div class="new-tweet-footer">
+              <button id="submit-button" type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+  
+        <section id="tweet-container"></section>
+    </div>
+    
 
       <img class="scrollUp" src="images/scrollUp.png">
     </main>

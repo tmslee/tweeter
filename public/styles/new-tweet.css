@@ -84,3 +84,9 @@
   font-family: "Bungee", sans-serif;
   margin: 1px;
 }
+
+@media only screen and (min-width:960px) {
+  .new-tweet {
+    justify-content: space-between;
+  }
+}

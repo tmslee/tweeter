@@ -10,9 +10,9 @@
 
 .tweet {
   height: 20vh;
-  width:80vw;
+  width: 100%;
 
-  border: 5px solid #545149;
+  border: .5vh solid #545149;
   background-color: #f4f1ec;
   border-radius: 10px;
 
@@ -71,7 +71,7 @@
 .tweet-text-container {
   height: 30%;
   width: 95%;
-  margin: -1vh 2vh 2vh 2vh;
+  margin: -1vh 2vh;
 
   display: flex;
   flex-direction: column;
@@ -127,3 +127,12 @@
   margin: 0.25vh 0.5vh;
 }
 
+@media only screen and (min-width:960px) {
+  #tweet-container {
+    justify-content: space-between;
+  }
+
+  .tweet {
+    width: 90%;
+  }
+}
