@@ -136,4 +136,18 @@ $(document).ready(function(){
     this.setAttribute('src', 'images/' + newSrc);
   });
 
+  $(document).on('click', '.scrollUp', function() {
+    const scrollUp = $('.scrollUp');
+    $(window).scrollTop(0);
+  });
+
+  $(document).on('scroll', function(){
+    const scrollUp = $('.scrollUp');
+    if ($(window).scrollTop() === 0) {
+      scrollUp.css('display', 'none');  
+    } else {
+      scrollUp.css('display', 'flex');  
+    }
+  });
+
 });

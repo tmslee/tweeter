@@ -12,14 +12,15 @@
 
 .logo {
   font-family: "Bungee", sans-serif;
-  margin: 1.5em;
-  font-size: 150%;
+  margin: 5% 5% 5% 2%;
+  font-size: 180%;
 }
 
 .navText {
   display:flex;
+  font-size: 150%;
   margin: 1.5em;
-  color: #bebebe;
+  color: #bdccff;
 }
 
 .navText:hover {

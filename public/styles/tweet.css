@@ -96,6 +96,7 @@
 .tweet-footer-line {
   align-self: center;
   border:2px solid #545149;
+  background-color: #545149;
   width:98%;
   margin: 0 0 0 0;
 }

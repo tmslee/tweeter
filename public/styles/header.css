@@ -3,15 +3,21 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  background-color: #cfb222;
+  background-color: #bdb108;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   padding-top:120px;
 }
 
+.profileImg {
+  height: 100%;
+  margin: 5px;
+}
+
 .headerName {
   display: flex;
+  margin: -30px 5px 5px 5px;
 }
 
 .firstName{
@@ -19,6 +25,6 @@
 }
 
 .lastName{
-  font-weight: 300;
+  font-weight: bold;
 }
 
