@@ -2,8 +2,10 @@
   display: none;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  margin: 20px 0;
+  width: 90%;
+  margin: 0.5vh 0;
+
+  font-size: 2.5vh;
 }
 
 /*============error message================*/
@@ -13,7 +15,8 @@
   align-self: center;
   align-items: center;
 
-  height: 30px;
+  height: 5vh;
+  width: 100%;
   padding: 3px;
   border: 3px solid red;
   text-align: center;
@@ -22,12 +25,13 @@
 }
 
 .err-symbol {
-  height:75%;
+  height:3vh;
   margin: 0 5px;
 }
 
 .err-text {
-  font-size: 75%;
+  font-size: 1.75vh;
+  text-align: center;
 }
 
 /*============error message================*/
@@ -57,7 +61,7 @@
 .new-tweet-line{
   align-self: center;
   background-color: #545149;
-  border:3px solid #545149;
+  border:0.25vh solid #545149;
   width:100%;
   margin: 0 0 10px 0;
 }

@@ -1,6 +1,7 @@
 .navBar {
   display: flex;
-  height: 120px;
+  height: 10vh;
+  width: 100vw;
   background-color: #4056A1;
   color: #ffffff;
   justify-content: space-between;
@@ -12,14 +13,14 @@
 
 .logo {
   font-family: "Bungee", sans-serif;
-  margin: 5% 5% 5% 2%;
-  font-size: 180%;
+  margin: 2vh;
+  font-size: 3.5vh;
 }
 
 .navText {
   display:flex;
-  font-size: 150%;
-  margin: 1.5em;
+  font-size: 3vh;
+  margin: 2vh;
   color: #bdccff;
 }
 
