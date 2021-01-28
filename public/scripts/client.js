@@ -47,7 +47,7 @@ $(document).ready(function(){
     }
   });
 
-  $(document).on('mouseover mouseout', '.tweet-option', function() {
+  $(document).on('click', '.tweet-option', function() {
     let origSrc = $(this).attr('src');
     let imageSrc = origSrc.substring(6, origSrc.length - 4);
     let newSrc;
