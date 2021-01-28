@@ -10,6 +10,7 @@ $(document).ready(function(){
     event.preventDefault();
     const formData = $(this).serialize();
     const errMsg = $(document).find('.err-msg');
+    const tweetContainer = $(document).find('#tweet-container');
 
     const remCount = Number($(this).find('.counter').val());
     if (remCount < 140 && remCount >= 0) {
@@ -24,6 +25,7 @@ $(document).ready(function(){
       .done(res => {})
       .fail(err => console.log(err))
 
+      tweetContainer.empty();
       loadtweets();
       $(this).find('#tweet-text').val('');
       $(this).find('.counter').val(140);
