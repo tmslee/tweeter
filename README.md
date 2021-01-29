@@ -38,12 +38,12 @@ The web application posts and displays tweets from user input under a randomly g
   - while a width less than will display a 'mobile' layout:
     - only the navigation bar is fixed in this display
 
-    - !["Display for mobile devices"](https://github.com/tmslee/tweeter/tree/master/docs/mobile-view.png)
+    - !["Display for mobile devices"](https://github.com/tmslee/tweeter/blob/master/docs/mobile-view.png)
 
   - width greater than 960 pixels will display as follows:
     - the navigation bar as well as the side 'profile bar' are fixed in this display
 
-    - !["Display for desktop"](https://github.com/tmslee/tweeter/tree/master/docs/desktop-view.png)
+    - !["Display for desktop"](https://github.com/tmslee/tweeter/blob/master/docs/desktop-view.png)
 
 ## Post a Tweet
 - clicking the top right prompt of the navigation bar will enable the user to post a tweet under a randomly generated user profile. The prompt will 'light up' in a brigher colour while being hovered on.
@@ -51,31 +51,31 @@ The web application posts and displays tweets from user input under a randomly g
 - as the user types into the text area (or deletes from it) the remaining character counter will decrease and increase accordingly
   - the counter will display a negative value in red if the character count goes beyond the limit
 
-!["post a new tweet in mobile"](https://github.com/tmslee/tweeter/tree/master/docs/mobile-new-tweet.png)
-!["post a new tweet in desktop"](https://github.com/tmslee/tweeter/tree/master/docs/desktop-new-tweet.png)
+!["post a new tweet in mobile"](https://github.com/tmslee/tweeter/blob/master/docs/mobile-new-tweet.png)
+!["post a new tweet in desktop"](https://github.com/tmslee/tweeter/blob/master/docs/desktop-new-tweet.png)
 
 - any attempt to submit a tweet with 0 characters or beyond the 140 character limit will not post the tweet and display the following error messages as appropriate:
 
 !["empty tweet error"](https://github.com/tmslee/tweeter/blob/master/docs/empty-tweet-error.png)
-!["over character limit error"](https://github.com/tmslee/tweeter/tree/master/docs/too-long-error.png)
+!["over character limit error"](https://github.com/tmslee/tweeter/blob/master/docs/too-long-error.png)
 
 ## Tweets
 - each tweet will display the poster's profile image and name above the text that was tweeted
 - hovering over a tweet will highlight the tweet in a slightly brighter color than the rest, display a shadow around the hovered tweet's border, and the poster's handle on the top right corner.
 
-!["tweet without hover"](https://github.com/tmslee/tweeter/tree/master/docs/tweet-no-hover.png)
-!["hovered tweet"](https://github.com/tmslee/tweeter/tree/master/docs/tweet-hover.png)
+!["tweet without hover"](https://github.com/tmslee/tweeter/blob/master/docs/tweet-no-hover.png)
+!["hovered tweet"](https://github.com/tmslee/tweeter/blob/master/docs/tweet-hover.png)
 
 - in the footer of every tweet displays how long ago the tweet was submitted, as well as a set of (non functional) options
 - each of these options (flag, retweet and like) can be clicked for a purely cosmetic affect indicating that the user has selected these options. (refreshing the page does not maintain the status of these options)
 
-!["tweet options unselected"](https://github.com/tmslee/tweeter/tree/master/docs/options-unselected.png)
-!["tweet options selected"](https://github.com/tmslee/tweeter/tree/master/docs/options-selected.png)
+!["tweet options unselected"](https://github.com/tmslee/tweeter/blob/master/docs/options-unselected.png)
+!["tweet options selected"](https://github.com/tmslee/tweeter/blob/master/docs/options-selected.png)
 
 ## Scroll to top
 - when a user scrolls away from the top of the page, a blue circular button will appear on the bottom right side of the page.
 - clicking this button will allow the user to travel back to the top of the page.
 - upon reaching the top of the page, the button will disappear. (it will reappear again once the user scrolls down)
 
-!["Scroll to top button - mobile"](https://github.com/tmslee/tweeter/tree/master/docs/scrollUp-mobile.png)
-!["Scroll to top button - desktop"](https://github.com/tmslee/tweeter/tree/master/docs/scrollUp-desktop.png)
+!["Scroll to top button - mobile"](https://github.com/tmslee/tweeter/blob/master/docs/scrollUp-mobile.png)
+!["Scroll to top button - desktop"](https://github.com/tmslee/tweeter/blob/master/docs/scrollUp-desktop.png)
