@@ -3,11 +3,11 @@
 Tweeter is a simple, single-page Twitter clone.
 The web application posts and displays tweets from user input under a randomly generated user profile. The display shows a history of previously posted tweets and showcases several html and css features to present them aesthetically.
 
-!["Display for mobile devices"](https://github.com/tmslee/tweeter/tree/master/docs/mobile-view.png)
+!["Display for mobile devices"](https://github.com/tmslee/tweeter/blob/master/docs/mobile-view.png)
 
 -----------------------------------------------------------------------------
 
-!["Display for desktop"](https://github.com/tmslee/tweeter/tree/master/docs/desktop-view.png)
+!["Display for desktop"](https://github.com/tmslee/tweeter/blob/master/docs/desktop-view.png)
 
 <br>
 
