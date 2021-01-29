@@ -56,7 +56,7 @@ The web application posts and displays tweets from user input under a randomly g
 
 - any attempt to submit a tweet with 0 characters or beyond the 140 character limit will not post the tweet and display the following error messages as appropriate:
 
-!["empty tweet error"](https://github.com/tmslee/tweeter/tree/master/docs/empty-tweet-error.png)
+!["empty tweet error"](https://github.com/tmslee/tweeter/blob/master/docs/empty-tweet-error.png)
 !["over character limit error"](https://github.com/tmslee/tweeter/tree/master/docs/too-long-error.png)
 
 ## Tweets
