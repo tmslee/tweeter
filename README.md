@@ -77,5 +77,5 @@ The web application posts and displays tweets from user input under a randomly g
 - clicking this button will allow the user to travel back to the top of the page.
 - upon reaching the top of the page, the button will disappear. (it will reappear again once the user scrolls down)
 
-!["Scroll to top button - mobile"](https://github.com/tmslee/tweeter/blob/master/docs/scrollUp-mobile.png)
-!["Scroll to top button - desktop"](https://github.com/tmslee/tweeter/blob/master/docs/scrollUp-desktop.png)
+!["Scroll to top button - mobile"](https://github.com/tmslee/tweeter/blob/master/docs/scrollup-mobile.png)
+!["Scroll to top button - desktop"](https://github.com/tmslee/tweeter/blob/master/docs/scrollup-desktop.png)
