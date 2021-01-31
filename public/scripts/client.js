@@ -23,14 +23,13 @@ $(document).ready(function(){
         method: 'POST',
         data: formData
       })
-      .done(res => {})
+      .done(res => {
+        //tweetContainer.empty();
+        loadtweets();
+        $(this).find('#tweet-text').val('');
+        $(this).find('.counter').val(140);
+      })
       .fail(err => console.log(err));
-
-      tweetContainer.empty();
-      loadtweets();
-      $(this).find('#tweet-text').val('');
-      $(this).find('.counter').val(140);
-
     } else if (remCount === 140) {
       errMsg.find('.err-text').text(`you can't tweet nothing, try typing something before tweeting`);
       errMsg.css('display', 'flex');
